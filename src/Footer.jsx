@@ -1,7 +1,11 @@
 
 function Footer(){
+    
+    const FooterLogo = './src/assets/Footerlogo.jpg'
+
     return(
     <footer className="footer">
+        <img src={FooterLogo} alt="little lemon" className="footer-logo" />
         <div className="footer-column">
             <h3 className="footer-tittle">Doormat navigation</h3>
             <ul>

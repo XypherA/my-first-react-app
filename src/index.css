@@ -1,5 +1,7 @@
 .header{
+  display: flex;
   padding: 20px;
+  justify-content: center;
 }
 
 .navbar {
@@ -32,11 +34,19 @@
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
   background-color: #495e57;
   color: white;
   padding: 20px;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.footer-logo{
+  position: relative;
+  left: 10px;
+
 }
 
 .footer-column {
@@ -68,5 +78,229 @@
 
 .footer-column ul li a:hover {
   text-decoration: underline;
+}
+
+.top-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #495e57;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.container-one{
+  background-color: #495e57;
+  height: 344px;
+  margin-bottom: 100px;
+}
+
+.container-one h1 {
+  font-size: 62px;
+  margin-bottom: 0;
+  color: hsl(50, 91%, 40%);
+  letter-spacing: -0.13rem;
+}
+
+.container-one h2 {
+  margin-top: 0;
+  color: hsl(0, 0%, 80%);
+}
+
+.container-one p{
+  width: 420px;
+  height: 72px;
+  font-weight: bold;
+  font-size: 16px;
+  color: hsl(0, 0%, 80%);
+}
+
+.top-image {
+  width: 383px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  top: 30px;
+}
+
+.card {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1) ;
+  background-color: #EDEFEE;
+  margin: 10px;
+  text-align: center;
+  width: 273px;
+  height: 616px;
+  display: inline-block;
+}
+
+.card .card-image{
+  width: 273px;
+  height: 240px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  object-fit: fill;
+}
+
+.card .card-tittle{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin: 15px;
+  color: hsl(0, 0%, 20%);
+}
+
+.card .card-text{
+  text-align: left;
+  margin: 0px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%, 30%)
+}
+
+.card-button{
+  width: 200px;
+  height: 40px;
+  background-color: #262626;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  top: 10rem;
+}
+
+.special{
+  outline: red solid;
+  display: grid;
+  grid-column: 1;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.special-headline{
+  outline: green solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30rem;
+}
+
+.special-cards{
+  outline: blue solid;
+  width: auto;
+  max-height: 636px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tcard {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1) ;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  background-color: #333333;
+}
+
+.tcard .tcard-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+.tcard .tcard-tittle{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #EDEFEE;
+}
+
+.tcard .tcard-text{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #EDEFEE;
+}
+
+.tcard .tcard-quotation{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #EDEFEE;
+}
+
+.testimonial{
+  display: grid;
+  grid-column: 1;
+  align-items: center;
+  background-color: #fbdabb;
+  height: 544px;
+}
+
+.testimonial-head{
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.adrian{
+  width: 273px;
+  height: 336px;
+  position: relative;
+  top: 165px;
+  border-radius: 5px;
+  border: solid;
+  
+
+}
+
+.mario{
+  width: 273px;
+  height: 336px;
+  position: relative;
+  right: 40px;
+  border-radius: 5px;
+  border: solid;
+}
+
+.aboutus{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: #ee9972;
+  height: 624px;
+}
+
+.aboutus-content{
+  width: 420px;
+  height: 320px;
+}
+
+.aboutus-h1{
+  font-size: 64px;
+  margin: 0;
+}
+
+.aboutus-h2{
+  margin: 0;
+}
+
+.aboutus-description{
+  margin-top: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.aboutus-img{
+  height: 500px;
+  display: flex;
 }
 
